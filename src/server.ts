@@ -10,7 +10,7 @@ const app = fastify()
 
 app.register(fastifyCors, {
   origin: '*'
-}))
+})
 
 app.register(getAllPromptsRoute)
 app.register(uploadVideoRoute)
