@@ -2,6 +2,12 @@
   "name": "upload-ai-api",
   "version": "1.0.0",
   "description": "",
+  "builds": [
+    { "src": "script.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/server.ts" }
+  ],
   "main": "index.js",
   "compilerOptions": {
     "isolatedModules": true
