@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "builds": [
-    { "src": "src/server.js", "use": "@vercel/node" }
+    { "src": "dist/src/server.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/server.ts" }
+    { "src": "/(.*)", "dest": "dist/src/server.js" }
   ],
   "main": "index.js",
   "compilerOptions": {
