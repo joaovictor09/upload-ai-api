@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "builds": [
-    { "src": "script.js", "use": "@vercel/node" }
+    { "src": "src/server.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/server.ts" }
